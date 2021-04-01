@@ -4,16 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="dist/style.css" />
-    <title>Document</title>
+    <title>Infinite Scroll</title>
+    <style>
+      #imageContainer img {
+        margin-bottom: 5px;
+        width: 100%;
+      }
+    </style>
   </head>
-  <body class="debug-screens">
-    <div class="text-5xl font-extrabold text-center">
-      <span
-        class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500"
-      >
-        quote generator
-      </span>
+  <body class="debug-screens font-sans bg-[whitesmoke]">
+    <!-- Title -->
+    <h1 class="text-2xl md:text-4xl md:tracking-wide text-center mt-6 mb-4">
+      Unsplash API - Infinite Scroll
+    </h1>
+    <!-- Loader -->
+    <div
+      id="loader"
+      class="fixed top-0 left-0 right-0 bottom-0 bg-[rgba(255,255,255,0.6)]"
+    >
+      <img
+        class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        src="src/loader.svg"
+        alt="Loading"
+      />
     </div>
+    <!-- Image Container -->
+    <div id="imageContainer" class="m-3 md:mx-[30%]"></div>
+    <script src="src/app.js"></script>
   </body>
 </html>

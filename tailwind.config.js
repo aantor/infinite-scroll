@@ -1,7 +1,10 @@
 module.exports = {
-  purge: ['./dist/**/*.html','./*.html'],
+  purge: ['./dist/**/*.html', './*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ['Nunito', 'sans-serif'],
+    },
     extend: {},
   },
   variants: {

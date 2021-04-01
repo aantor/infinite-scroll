@@ -362,7 +362,7 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Nunito, sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -602,30 +602,113 @@ video {
 	}
 }
 /* write custom styles below this line*/
-.bg-gradient-to-r {
-	background-image: linear-gradient(to right, var(--tw-gradient-stops));
+.fixed {
+	position: fixed;
 }
-.from-green-400 {
-	--tw-gradient-from: #34d399;
-	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(52, 211, 153, 0));
+.top-0 {
+	top: 0px;
 }
-.to-blue-500 {
-	--tw-gradient-to: #3b82f6;
+.left-0 {
+	left: 0px;
 }
-.bg-clip-text {
-	-webkit-background-clip: text;
-	        background-clip: text;
+.right-0 {
+	right: 0px;
+}
+.bottom-0 {
+	bottom: 0px;
+}
+.top-1\/2 {
+	top: 50%;
+}
+.left-1\/2 {
+	left: 50%;
+}
+.m-3 {
+	margin: 0.75rem;
+}
+.mt-6 {
+	margin-top: 1.5rem;
+}
+.mb-4 {
+	margin-bottom: 1rem;
+}
+.hidden {
+	display: none;
+}
+.transform {
+	--tw-translate-x: 0;
+	--tw-translate-y: 0;
+	--tw-rotate: 0;
+	--tw-skew-x: 0;
+	--tw-skew-y: 0;
+	--tw-scale-x: 1;
+	--tw-scale-y: 1;
+	transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-x-1\/2 {
+	--tw-translate-x: -50%;
+}
+.-translate-y-1\/2 {
+	--tw-translate-y: -50%;
+}
+.bg-\[whitesmoke\] {
+	--tw-bg-opacity: 1;
+	background-color: rgba(245, 245, 245, var(--tw-bg-opacity));
+}
+.bg-\[rgba\(255\2c 255\2c 255\2c 0\.6\)\] {
+	background-color: rgba(255,255,255,0.6);
 }
 .text-center {
 	text-align: center;
 }
-.text-5xl {
-	font-size: 3rem;
-	line-height: 1;
+.font-sans {
+	font-family: Nunito, sans-serif;
 }
-.font-extrabold {
-	font-weight: 800;
+.text-2xl {
+	font-size: 1.5rem;
+	line-height: 2rem;
 }
-.text-transparent {
-	color: transparent;
+.text-xl {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+.text-3xl {
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+}
+@media (min-width: 768px) {
+
+	.md\:mx-\[30\%\] {
+		margin-left: 30%;
+		margin-right: 30%;
+	}
+
+	.md\:text-4xl {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+
+	.md\:text-sm {
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+	}
+
+	.md\:text-3xl {
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
+
+	.md\:text-xl {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+	}
+
+	.md\:text-2xl {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	.md\:tracking-wide {
+		letter-spacing: 0.025em;
+	}
 }
